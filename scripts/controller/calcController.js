@@ -15,7 +15,6 @@ class CalcController {
         this.initialize();
         this.initButtonEvents();
         this.initKeyboard();
-        this.pasteFromClipboard();
     }
 
     copyToClipboard() {
@@ -44,6 +43,7 @@ class CalcController {
         }, 1000);
 
         this.setLastNumberToDisplay();
+        this.pasteFromClipboard();
     }
 
     initKeyboard() {
